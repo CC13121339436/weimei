@@ -4,7 +4,24 @@ import Vue from 'vue'
 import App from './App'
 import router from './router'
 
+import axios from "axios"
+
+//公用的组件在这里注册
+import vFooter from './components/public/Footer.vue'
+
+//mint-ui的组件
+
+//按需导入 mint-ui的组件然后注册
+
+
+//全局注册
+Vue.component("v-footer",vFooter)
+
+
 Vue.config.productionTip = false
+
+//给vue扩展 全局使用的插件
+Vue.prototype.$http = axios
 
 /* eslint-disable no-new */
 new Vue({
