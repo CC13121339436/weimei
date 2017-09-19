@@ -1,0 +1,24 @@
+
+.setfz(1600px);
+.setfz(1024px);
+.setfz(800px);
+.setfz(768px);
+.setfz(640px);
+.setfz(600px);
+.setfz(414px);
+.setfz(412px);
+.setfz(384px);
+.setfz(375px);
+.setfz(360px);
+.setfz(320px);
+
+.setfz(@width){
+    @fz : @width / 640 * 100px;
+
+
+    @media screen and (max-width : (@width+2px) ){
+        html{
+            font-size: @fz;
+        }
+    }
+}

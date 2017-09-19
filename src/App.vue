@@ -1,9 +1,9 @@
 <template>
   <div id="app">
-    <img src="./assets/logo.png">
     <router-view></router-view>
   </div>
 </template>
+
 
 <script>
 export default {
@@ -11,13 +11,16 @@ export default {
 }
 </script>
 
-<style>
+<style lang="less">
+@import "base.css";
+@import "media.less";
+body{
+  background: #f6f6f6;
+}
 #app {
   font-family: 'Avenir', Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  text-align: center;
   color: #2c3e50;
-  margin-top: 60px;
 }
 </style>
