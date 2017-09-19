@@ -26,7 +26,7 @@
     }
 </script>
 
-<style>
+<style scoped lang="scss">
     .footer {position:fixed; bottom:0; left: 0; width: 100%; height: 50px; border-top: 1px solid #ccc; line-height: 50px; text-align: center; background:#fff;border-top:1px solid #ccc;z-index: 1;}
     .footer ul { overflow:hidden;}  
     .footer li { float:left; width:20%}
